@@ -1,0 +1,274 @@
+[2023-04-10 01:58:09.192] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 01:58:09.192] [info] Using CSS file /home/eric/.config/waybar/style.css
+
+(waybar:112008): GLib-GObject-CRITICAL **: 01:58:09.215: ../glib/gobject/gsignal.c:2088: type 'GtkWindow' is already overridden for signal id '73'
+
+(waybar:112008): GLib-GObject-CRITICAL **: 01:58:09.215: ../glib/gobject/gsignal.c:2088: type 'GtkWindow' is already overridden for signal id '72'
+[2023-04-10 01:58:09.234] [info] Bar configured (width: 1920, height: 50) for output: HDMI-A-1
+[2023-04-10 01:58:09.234] [error] Item '': No icon name or pixmap given.
+[2023-04-10 01:58:09.252] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 01:58:45.883] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 01:58:45.883] [info] Using CSS file /home/eric/.config/waybar/style.css
+
+(waybar:113097): GLib-GObject-CRITICAL **: 01:58:45.907: ../glib/gobject/gsignal.c:2088: type 'GtkWindow' is already overridden for signal id '73'
+
+(waybar:113097): GLib-GObject-CRITICAL **: 01:58:45.907: ../glib/gobject/gsignal.c:2088: type 'GtkWindow' is already overridden for signal id '72'
+[2023-04-10 01:58:45.928] [info] Bar configured (width: 1920, height: 50) for output: HDMI-A-1
+[2023-04-10 01:58:45.929] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+[2023-04-10 01:59:47.510] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 01:59:47.510] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 01:59:47.541] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:00:55.778] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:00:55.778] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:00:55.811] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:02:18.467] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:02:18.468] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:02:18.498] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+warn: terminal.c:1861: slave exited with signal 1 (Hangup)
+[2023-04-10 02:05:18.042] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:05:18.043] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:05:18.073] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+[2023-04-10 02:06:24.923] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:06:24.923] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:06:24.975] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:06:24.975] [error] Item '': No icon name or pixmap given.
+[2023-04-10 02:06:25.934] [warning] Bug in mpd: no current song but state is not stopped.
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+[2023-04-10 02:07:03.241] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:07:03.241] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:07:03.286] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:07:03.286] [error] Item '': No icon name or pixmap given.
+[2023-04-10 02:07:04.252] [warning] Bug in mpd: no current song but state is not stopped.
+[2023-04-10 02:07:25.199] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:07:25.199] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:07:25.201] [error] style.css:46:0Expected a valid selector
+[2023-04-10 02:07:47.814] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:07:47.815] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:07:47.815] [error] style.css:46:0Expected a valid selector
+[2023-04-10 02:09:10.294] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:09:10.294] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:09:10.362] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:09:10.362] [error] Item '': No icon name or pixmap given.
+[2023-04-10 02:09:11.306] [warning] Bug in mpd: no current song but state is not stopped.
+[2023-04-10 02:09:29.142] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:09:29.142] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:09:29.197] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:09:29.197] [error] Item '': No icon name or pixmap given.
+[2023-04-10 02:09:30.153] [warning] Bug in mpd: no current song but state is not stopped.
+[2023-04-10 02:09:32.494] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:09:32.494] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:09:32.550] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:09:33.506] [warning] Bug in mpd: no current song but state is not stopped.
+[2023-04-10 02:10:58.311] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:10:58.311] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:10:58.363] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+Traceback (most recent call last):
+  File "/usr/bin/zscroll", line 550, in <module>
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    main()
+  File "/usr/bin/zscroll", line 544, in main
+    zscroll()
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print_text(display_text)
+    zscroll()
+  File "/usr/bin/zscroll", line 363, in print_text
+  File "/usr/bin/zscroll", line 429, in zscroll
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+    print_text(display_text)
+  File "/usr/bin/zscroll", line 363, in print_text
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+    print(text, flush=True)
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+[2023-04-10 02:12:04.392] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:12:04.392] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:12:04.440] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:12:37.067] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:12:37.068] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:12:37.115] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:14:32.027] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:14:32.027] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:14:32.074] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:14:42.504] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:14:42.504] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:14:42.552] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:17:38.371] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:17:38.371] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:17:38.422] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:18:27.015] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:18:27.016] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:18:27.062] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:18:28.027] [warning] Bug in mpd: no current song but state is not stopped.
+[2023-04-10 02:19:21.603] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:19:21.603] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:19:21.649] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:19:22.614] [warning] Bug in mpd: no current song but state is not stopped.
+truetruefalse[2023-04-10 02:20:16.204] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:20:16.204] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:20:16.251] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:23:59.628] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:23:59.628] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:23:59.636] [warning] module image/album-art: Unknown module: image/album-art
+[2023-04-10 02:23:59.675] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:26:25.646] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:26:25.646] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:26:25.654] [warning] module album-art: Unknown module: album-art
+[2023-04-10 02:26:25.695] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:27:10.942] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:27:10.942] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:27:11.694] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:28:25.253] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:28:25.253] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:28:25.949] [warning] Requested height: 50 is less than the minimum height: 52 required by the modules
+[2023-04-10 02:28:25.949] [info] Bar configured (width: 1920, height: 52) for output: DP-1
+[2023-04-10 02:29:03.943] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:29:03.943] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:29:04.671] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+[2023-04-10 02:29:41.948] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:29:41.948] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:29:42.646] [warning] Requested height: 50 is less than the minimum height: 52 required by the modules
+[2023-04-10 02:29:42.646] [info] Bar configured (width: 1920, height: 52) for output: DP-1
+[2023-04-10 02:29:53.087] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2023-04-10 02:29:53.088] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2023-04-10 02:29:53.786] [warning] Requested height: 50 is less than the minimum height: 52 required by the modules
+[2023-04-10 02:29:53.786] [info] Bar configured (width: 1920, height: 52) for output: DP-1
+No players found
+[2023-04-10 02:30:23.109] [info] Bar configured (width: 1920, height: 50) for output: DP-1
+No players found

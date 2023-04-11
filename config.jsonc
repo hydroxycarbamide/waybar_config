@@ -1,0 +1,226 @@
+{
+  "output": [
+    "DP-1"
+  ],
+  "layer": "top",
+  "position": "top",
+  "height": 50,
+  "modules-center": [
+    "wlr/workspaces",
+    "wlr/taskbar",
+    "tray",
+    "custom/notification",
+  //  "custom/updates",
+  //  "gamemode",
+    "image#album-art",
+    "custom/media",
+  // "mpd",
+  // "mpris",
+    "network",
+    "pulseaudio",
+    "custom/date",
+    "clock"
+  ],
+  "wlr/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate",
+    "format": "{icon}",
+    "sort-by-number": true,
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": []
+    },
+    "format-icons": {
+      //  "1": "一",
+      //  "2": "二",
+      //  "3": "三",
+      //  "4": "四",
+      //  "5": "五",
+      //  "6": "六",
+      //  "7": "七",
+      //  "8": "八",
+      //  "9": "九",
+      //  "active": "●"
+      "1": "1: ",
+      "2": "2: ",
+      "3": "3: ",
+      "4": "4: ",
+      "5": "5: ",
+      "6": "6: ",
+      "7": "7: ",
+      "8": "8: ",
+      "9": "9: ",
+      "10": "0:●",
+      "default": "1: "
+    }
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 14,
+    "icon-theme": "Papirus-Dark",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+    ],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    }
+  },
+  "tray": {
+    "icon-size": 13,
+    "spacing": 10
+  },
+  "custom/media": {
+    "format": "{icon} {}",
+    "max-length": 40,
+    "format-icons": {
+      "spotify": " ",
+      "default": " "
+    },
+    "escape": true,
+    "exec": "$HOME/.config/waybar/scroll_spotify_status.sh",
+    "on-click": "playerctl play-pause",
+    "on-click-middle": "playerctl previous",
+    "on-click-right": "playerctl next"
+  },
+  "mpd": {
+    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
+    "format-disconnected": "Disconnected",
+    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon} Stopped",
+    "interval": 10,
+    "consume-icons": {
+      "on": " " // Icon shows only when "consume" is on
+    },
+    "random-icons": {
+      "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
+      "on": " "
+    },
+    "repeat-icons": {
+      "on": " "
+    },
+    "single-icons": {
+      "on": "1 "
+    },
+    "state-icons": {
+      "paused": "",
+      "playing": ""
+    },
+    "tooltip-format": "MPD (connected)",
+    "tooltip-format-disconnected": "MPD (disconnected)"
+  },
+  "mpris": {
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "player-icons": {
+      "default": "▶",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": "⏸"
+    },
+    // "ignored-players": ["firefox"]
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": " <span foreground='red'><sup></sup></span>",
+      "none": " ",
+      "dnd-notification": " <span foreground='red'><sup></sup></span>",
+      "dnd-none": " "
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "gamemode": {
+    "format": "{glyph}",
+    "format-alt": "{glyph} {count}",
+    "glyph": "",
+    "hide-not-running": true,
+    "use-icon": true,
+    "icon-name": "input-gaming-symbolic",
+    "icon-spacing": 4,
+    "icon-size": 20,
+    "tooltip": true,
+    "tooltip-format": "Games running: {count}"
+  },
+  "clock": {
+    "format": "{:%a %d %b %R} ",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#b7bdf8'><b>{}</b></span>",
+        "days": "<span color='#cad3f5'><b>{}</b></span>",
+        "weeks": "<span color='#8bd5ca'><b>W{}</b></span>",
+        "weekdays": "<span color='#8aadf4'><b>{}</b></span>",
+        "today": "<span color='#ed8796'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+  "network": {
+    "format-wifi": "   {essid}",
+    // "format-ethernet": "   {bandwidthDownBytes}  {bandwidthTotalBytes}",
+    "format-ethernet": "  {ipaddr}",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "󰤮   Disconnected",
+    "tooltip-format-ethernet": "{ipaddr}/{cidr} | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}"
+  },
+  "image#album-art": {
+       "exec":"~/.config/waybar/modules/album_art.sh",
+       "size": 32,
+       "interval": 30
+  },
+  "custom/updates": {
+    "interval": 120,
+    "return-type": "string",
+    "exec": "~/.config/waybar/modules/updates.sh",
+    "tooltip": false,
+    "on-click": "setsid -f foot -e paru -Syyu"
+  },
+  "custom/downloads": {
+    "interval": 600,
+    "return-type": "string",
+    "exec": "~/.config/waybar/modules/downloads.py",
+    "tooltip": false,
+    "on-click": "xdg-open https://github.com/xelphlinux/xelph-iso"
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": "ﱝ Muted",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    }
+  }
+}
