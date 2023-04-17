@@ -48,40 +48,56 @@ tooltip {
 	border-radius: 15px;
 }
 
-#custom-date,
-#custom-notification,
-#custom-media,
-#custom-updates,
-#custom-downloads,
-#clock,
-#battery,
-#pulseaudio,
-#network,
-#workspaces,
-#mpris,
-#mpd,
-#image,
-#taskbar,
-#gamemode,
-#tray {
+widget > * {
+	padding: 3px 10px;
+}
+
+box.horizontal.modules-right,
+box.horizontal.modules-center,
+box.horizontal.modules-left {
 	background-color: #181825;
-	padding: 5px 10px;
-	margin: 5px 0px;
+	margin: 5px 5px;
+	border-radius: 9999px 9999px 9999px 9999px;
+}
+
+box.horizontal.modules-right {
+	padding-left: 10px;
+}
+
+#image,
+#custom-media,
+#mpd,
+#mpris {
+	background-color: #181611;
 }
 
 #image {
-	padding-left: 5px;
+	padding-left: 20px;
 	padding-right: 0px;
+	border-radius: 9999px 0px 0px 9999px;
 }
 
 #custom-media,
 #mpd,
 #mpris {
 	color: #f9e2af;
+	padding-right: 20px;
+	border-radius: 0px 9999px 9999px 0px;
 }
 
 #custom-notification {
 	color: #eb6f92;
+	padding-left: 20px;
+}
+
+#taskbar button {
+	margin: 0px 2px;
+	padding: 0px 10px;
+}
+
+#taskbar button.active {
+	color: #0f0f0f;
+	border-radius: 15px;
 }
 
 #tray {
@@ -90,7 +106,7 @@ tooltip {
 
 #workspaces {
 	background-color: #1e1e2e;
-	border-radius: 9999px 0px 0px 9999px;
+	border-radius: 9999px 9999px 9999px 9999px;
 }
 
 #custom-date {
@@ -102,20 +118,27 @@ tooltip {
 }
 
 #custom-downloads {
-	color: #f6c177;
+	color: #eed49f;
 }
 
 #clock {
 	color: #8aadf4;
-	border-radius: 0px 9999px 9999px 0px;
-	margin-right: 10px;
+	border-radius: 9999px 9999px 9999px 9999px;
+	background-color: #1b2230;
 }
 
 #network {
-	color: #fab387;
-	border-radius: 0px 0px 0px 0px;
+	color: #f5a97f;
 }
 
-#pulseaudio {
-	color: #9ccfd8;
+#pulseaudio, #cava {
+	color: #7dc4e4;
+}
+
+#cava {
+	font-family: FiraCode Nerd Font Mono;
+}
+
+#memory {
+	color: #b7bdf8;
 }

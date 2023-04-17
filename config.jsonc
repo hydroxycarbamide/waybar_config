@@ -4,19 +4,25 @@
   ],
   "layer": "top",
   "position": "top",
-  "height": 50,
-  "modules-center": [
+  "height": 48,
+  "modules-left": [
     "wlr/workspaces",
-    "wlr/taskbar",
-    "tray",
+    "wlr/taskbar"
+  ],
+  "modules-center": [
     "custom/notification",
-  //  "custom/updates",
-  //  "gamemode",
+    "tray",
     "image#album-art",
-    "custom/media",
+    "custom/media"
   // "mpd",
   // "mpris",
+  ],
+  "modules-right": [
+  //  "custom/updates",
+  //  "gamemode",
     "network",
+  //  "memory",
+    "cava",
     "pulseaudio",
     "custom/date",
     "clock"
@@ -64,6 +70,7 @@
     }
   },
   "wlr/taskbar": {
+    "all-outputs": true,
     "format": "{icon}",
     "icon-size": 14,
     "icon-theme": "Papirus-Dark",
@@ -83,12 +90,8 @@
   "custom/media": {
     "format": "{icon} {}",
     "max-length": 40,
-    "format-icons": {
-      "spotify": " ",
-      "default": " "
-    },
     "escape": true,
-    "exec": "$HOME/.config/waybar/scroll_spotify_status.sh",
+    "exec": "$HOME/.config/waybar/modules/mpris/scroll_status.sh NOBAR",
     "on-click": "playerctl play-pause",
     "on-click-middle": "playerctl previous",
     "on-click-right": "playerctl next"
@@ -130,6 +133,10 @@
     },
     // "ignored-players": ["firefox"]
   },
+  "memory": {
+      "interval": 30,
+      "format": "  {used:0.1f}G/{total:0.1f}G"
+  },
   "custom/notification": {
     "tooltip": false,
     "format": "{icon}",
@@ -143,7 +150,7 @@
     "exec-if": "which swaync-client",
     "exec": "swaync-client -swb",
     "on-click": "swaync-client -t -sw",
-    "on-click-right": "swaync-client -d -sw",
+    "on-click-middle": "swaync-client -d -sw",
     "escape": true
   },
   "gamemode": {
@@ -183,10 +190,11 @@
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "󰤮   Disconnected",
     "tooltip-format-ethernet": "{ipaddr}/{cidr} | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
-    "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}"
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+    "on-click": "networkmanager_dmenu"
   },
   "image#album-art": {
-       "exec":"~/.config/waybar/modules/album_art.sh",
+       "exec":"~/.config/waybar/modules/mpris/album_art.sh",
        "size": 32,
        "interval": 30
   },
@@ -208,6 +216,7 @@
     "format": "{icon}  {volume}%",
     "format-muted": "ﱝ Muted",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-middle": "helvum",
     "scroll-step": 5,
     "format-icons": {
       "headphone": "",
@@ -221,6 +230,28 @@
         "",
         ""
       ]
+    }
+  },
+  "cava": {
+    //"cava_config": "$HOME/.config/cava/config",
+    "framerate": 144,
+    "autosens": 1,
+    "sensitivity": 100,
+    "bars": 8,
+    "lower_cutoff_freq": 50,
+    "higher_cutoff_freq": 10000,
+    "method": "pipewire",
+    "source": "auto",
+    "stereo": true,
+    "reverse": false,
+    "bar_delimiter": 0,
+    "monstercat": false,
+    "waves": false,
+    "noise_reduction": 0.77,
+    "input_delay": 2,
+    "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+    "actions": {
+      "on-click-right": "mode"
     }
   }
 }
