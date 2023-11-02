@@ -39,9 +39,9 @@ get_info() {
 
     if [ -n "$artist" ]; then
         album=$(extract_meta album)
-        [ -n "$album" ] && echo -n "  $album "
+        [ -n "$album" ] && echo -n " 󰫔 $album "
 
-        echo -n " ﴁ $artist  "
+        echo -n " 󰠃 $artist  "
     fi
 
     echo "$title"
@@ -71,6 +71,6 @@ if [ -n "${PAUSED[0]}" ]; then
     send_hook 2
     get_info "${PAUSED[0]}" "$2"
 else
-    [ "$2" = icon ] && echo "none" || echo " 鈴 no players "
+    [ "$2" = icon ] && echo "none" || echo " 󰒲  no players "
 fi
 

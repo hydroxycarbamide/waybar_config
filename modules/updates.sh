@@ -3,10 +3,8 @@ pkg_updates() {
   updates=$(pacman -Qu | wc -l)
   aurupdates=$(paru -Qua | wc -l)
   updates=$((updates + aurupdates))
-  if [ $updates == 1 ]; then
-    echo -n " 1 Update "
-  elif [ $updates -ne 0 ];then
-    echo -n " $updates Updates "
+  if [ $updates -gt 0 ]; then
+    echo -n " $updates"
   fi
 }
 pkg_updates

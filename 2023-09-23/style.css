@@ -2,64 +2,45 @@
 	border: none;
 	border-radius: 0;
 	font-family: UbuntuMono Nerd Font, "M PLUS 1", Noto Sans CJK JP;
-	font-size: 12px;
-	font-weight: 600;
+	font-size: 15px;
+	font-weight: 700;
 	min-height: 0;
 }
 
 window#waybar {
-	background: #181926;
+	background: transparent;
 	color: white;
 }
 
 tooltip {
 	background: rgba(24, 25, 38, 0.95);
-	border-radius: 5px;
+	border-radius: 15px;
 	border-width: 0px;
 	border-style: solid;
 	border-color: rgb(24, 25, 38);
 }
 
-#workspaces {
-	background-color: #1e1e2e;
-	border-radius: 5px 0px 0px 5px;
-	/*margin: 4px 0px;*/
-}
-
 #workspaces button {
-	padding: 5px 9px;
-	margin: 0px 2px;
+	padding: 5px 10px;
 	color: #cba6f7;
-}
-
-#workspaces button.empty {
-	color: #939ab7;
 }
 
 #workspaces button.active {
 	color: #0f0f0f;
 	background-color: #c49ec4;
-	border-radius: 5px;
-}
-
-#workspaces button.empty.active {
-	background-color: #939ab7;
+	border-radius: 15px;
 }
 
 #workspaces button.urgent {
 	color: #0f0f0f;
 	background-color: #9ec3c4;
-	border-radius: 5px;
+	border-radius: 15px;
 }
 
 #workspaces button:hover {
 	background-color: #c49ec4;
 	color: #0f0f0f;
-	border-radius: 5px;
-}
-
-#workspaces button.empty:hover {
-	background-color: #939ab7;
+	border-radius: 15px;
 }
 
 widget>box,
@@ -67,12 +48,12 @@ widget>label {
 	padding: 3px 10px;
 }
 
-box.horizontal.modules-center,
 box.horizontal.modules-right,
+box.horizontal.modules-center,
 box.horizontal.modules-left {
-	/*background-color: #181926;*/
-	margin: 0px 0px;
-	/*border-radius: 5px 5px 5px 5px;*/
+	background-color: #181825;
+	margin: 5px 5px;
+	border-radius: 9999px 9999px 9999px 9999px;
 }
 
 box.horizontal.modules-right {
@@ -90,17 +71,16 @@ box.horizontal.modules-right {
 #image {
 	padding-left: 20px;
 	padding-right: 0px;
-	border-radius: 5px 0px 0px 5px;
+	border-radius: 9999px 0px 0px 9999px;
 }
 
 */
 #custom-media,
 #mpd,
-#cava,
 #mpris {
 	color: #f9e2af;
 	padding-right: 20px;
-	border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 9999px 9999px 0px;
 }
 
 
@@ -112,11 +92,14 @@ box.horizontal.modules-right {
 
 #custom-notification {
 	color: #eb6f92;
+	padding: 0 20px;
+	border-radius: 0px 9999px 9999px 0px;
+	background-color: #1b2230;
 }
 
 #taskbar button {
 	margin: 0px 2px;
-	padding: 5px 9px;
+	padding: 0px 10px;
 	border-radius: 4px;
 	transition-duration: 150ms;
 }
@@ -136,6 +119,11 @@ box.horizontal.modules-right {
 	padding-left: 15px;
 }
 
+#workspaces {
+	background-color: #1e1e2e;
+	border-radius: 9999px 9999px 9999px 9999px;
+}
+
 #custom-date {
 	color: #8aadf4;
 }
@@ -144,31 +132,30 @@ box.horizontal.modules-right {
 	color: #9ccfd8;
 }
 
-#rightmost {
-	color: #8aadf4;
-	border-radius: 5px 0px 0px 5px;
-	background-color: #1b2230;
-	padding: 0px 10px;
-	/*margin: 4px 0px;*/
-}
-
 #custom-downloads {
 	color: #eed49f;
 }
 
 #custom-logo {
-	font-size: 14px;
+	color: #8aadf4;
+	border-radius: 0px 9999px 9999px 0px;
+	background-color: #1b2230;
+	padding: 0px 20px;
+}
+
+#clock {
+	color: #8aadf4;
+	border-radius: 9999px 0px 0px 9999px;
+	background-color: #1b2230;
+	padding-left: 20px;
 }
 
 #network {
 	color: #f5a97f;
 }
 
-#cpu {
-	color: #a6da95;
-}
-
-#pulseaudio {
+#pulseaudio,
+#cava {
 	color: #7dc4e4;
 }
 

@@ -1,17 +1,15 @@
 {
   "output": [
-    "DP-3",
-    "HDMI-A-1"
+    "DP-3"
   ],
   "layer": "top",
   "position": "top",
-  "height": 34,
+  "height": 50,
   "modules-left": [
     "hyprland/workspaces",
     "image#album-art",
     // "custom/media",
-    "mpris",
-    "cava"
+    "mpris"
     // "hyprland/window",
   ],
   "modules-center": [
@@ -22,82 +20,53 @@
   "modules-right": [
     "custom/updates",
     "gamemode",
-    "keyboard-state",
+    "temperature",
     "network",
-    "group/hardware",
-    "group/audio",
-    "group/rightmost"
+    //  "memory",
+    "cava",
+    "pulseaudio",
+    // "pulseaudio/slider",
+    //  "custom/date",
+    "clock",
+    // "custom/logo",
+    "custom/notification",
   ],
-  "group/audio": {
-		"orientation": "horizontal",
-    "drawer": {
-      "transition-duration": 500,
-      "children-class": "not-power",
-      "transition-left-to-right": true
-    },
-		"modules": [
-      "pulseaudio",
-      "pulseaudio/slider"
-		]
-	},
-  "group/hardware": {
-		"orientation": "horizontal",
-    "drawer": {
-        "transition-duration": 500,
-        "children-class": "not-power",
-        "transition-left-to-right": false
-    },
-		"modules": [
-      "temperature",
-			"memory",
-			"cpu"
-		]
-	},
-  "group/rightmost": {
-		"orientation": "horizontal",
-		"modules": [
-      "custom/notification",
-      "clock",
-      "custom/logo"
-		]
-	},
   "hyprland/workspaces": {
-    "active-only": false,
     "disable-scroll": true,
-    "all-outputs": false,
+    "all-outputs": true,
     "on-click": "activate",
     "format": "{name}:{icon}",
     "sort-by-number": true,
     // "show-special": true,
-    "persistent-workspaces": {
-      "1": ["DP-3"],
-      "2": ["DP-3"],
-      "3": ["DP-3"],
-      "4": ["DP-3"],
-      "5": ["DP-3"],
-      "6": ["HDMI-A-1"],
-      "7": ["HDMI-A-1"],
-      "8": ["HDMI-A-1"],
-      "9": ["HDMI-A-1"],
-      "0": ["HDMI-A-1"]
-    },
+    // "persistent-workspaces": {
+    //   "1": [],
+    //   "2": [],
+    //   "3": [],
+    //   "4": [],
+    //   "5": [],
+    //   "6": [],
+    //   "7": [],
+    //   "8": [],
+    //   "9": [],
+    //   "10": []
+    // },
     "format-icons": {
       "1": " ",
       "2": " ",
       "3": " ",
-      "4": " ",
-      "5": " ",
+      "4": " ",
+      "5": " ",
       "6": " ",
       "7": " ",
-      "8": " ",
+      "8": " ",
       "9": " ",
       "default": " "
     }
   },
   "wlr/taskbar": {
-    "all-outputs": false,
+    "all-outputs": true,
     "format": "{icon}",
-    "icon-size": 15,
+    "icon-size": 20,
     "icon-theme": "Papirus-Dark",
     "active-first": false,
     "tooltip-format": "{title}",
@@ -109,7 +78,7 @@
     }
   },
   "tray": {
-    "icon-size": 12,
+    "icon-size": 13,
     "spacing": 10
   },
   "custom/media": {
@@ -149,8 +118,8 @@
   "mpris": {
     "markup": true,
     "interval": 5,
-    "format": "<span>{title}</span> - <span>{artist}</span>\n<i>{album}</i>",
-    "format-paused": "<span>{title}</span> - <span>{artist}</span>\n<i>{album}</i>",
+    "format": "<span>{title}</span>\n<span>{artist}</span>\n<i>{album}</i>",
+    "format-paused": "<span>{title}</span>\n<span>{artist}</span>\n<i>{album}</i>",
     "title-len": 30,
     "player-icons": {
       "default": "⏸",
@@ -164,11 +133,6 @@
   "memory": {
     "interval": 30,
     "format": "  {used:0.1f}G/{total:0.1f}G"
-  },
-  "cpu": {
-      "interval": 10,
-      "format": "  {}%",
-      "max-length": 10
   },
   "custom/notification": {
     "tooltip": false,
@@ -240,7 +204,7 @@
   },
   "image#album-art": {
     "exec": "~/.config/waybar/modules/mpris/album_art.sh",
-    "size": 20,
+    "size": 32,
     "interval": 30
   },
   "custom/updates": {
@@ -300,7 +264,6 @@
   "cava": {
     //"cava_config": "$HOME/.config/cava/config",
     "framerate": 144,
-    "hide_on_silence": false,
     "autosens": 1,
     "bars": 10,
     "lower_cutoff_freq": 50,
@@ -326,18 +289,6 @@
     ],
     "actions": {
       "on-click-right": "mode"
-    }
-  },
-  "keyboard-state": {
-    "numlock": false,
-    "capslock": true,
-    "format": {
-        "numlock": "N {icon}",
-        "capslock": "{icon}"                                                                                                                                                       
-    },
-    "format-icons": {
-        "locked": "",
-        "unlocked": ""
     }
   },
   "hyprland/window": {

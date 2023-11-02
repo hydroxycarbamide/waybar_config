@@ -3,15 +3,21 @@
 
 write_art() {
    album_art=$(playerctl -p $1 metadata mpris:artUrl)
-   
-   if [[ -z $album_art ]] 
+   status=$?
+   if [[ -z $album_art || $status -eq 0 ]] 
    then
-      exit
+        album_art=$(playerctl metadata mpris:artUrl)
+        if [[ -z $album_art ]]
+        then
+            exit
+        fi
    fi
    
    curl -s "${album_art}" --output "/tmp/cover.jpeg"
    echo "/tmp/cover.jpeg"
 }
+
+
 
 
 read -d'\n' -ra PLAYERS <<<"$(playerctl -l 2>/dev/null)"
