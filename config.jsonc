@@ -5,24 +5,25 @@
   ],
   "layer": "top",
   "position": "top",
-  "height": 34,
+  "height": 44,
   "modules-left": [
     "hyprland/workspaces",
+    // "sway/workspaces#sway",
+    "cava",
     "image#album-art",
     // "custom/media",
-    "mpris",
-    "cava"
+    "mpris"
     // "hyprland/window",
   ],
   "modules-center": [
-    "tray",
     "wlr/taskbar"
     // "mpd",
   ],
   "modules-right": [
+    "tray",
     "custom/updates",
     "gamemode",
-    "keyboard-state",
+    // "keyboard-state",
     "network",
     "group/hardware",
     "group/audio",
@@ -50,7 +51,8 @@
 		"modules": [
       "temperature",
 			"memory",
-			"cpu"
+			"cpu",
+      "temperature#amdgpu"
 		]
 	},
   "group/rightmost": {
@@ -66,7 +68,7 @@
     "disable-scroll": true,
     "all-outputs": false,
     "on-click": "activate",
-    "format": "{name}:{icon}",
+    "format": "{name}: {icon}",
     "sort-by-number": true,
     // "show-special": true,
     "persistent-workspaces": {
@@ -87,8 +89,40 @@
       "3": " ",
       "4": " ",
       "5": " ",
-      "6": " ",
-      "7": " ",
+      "6": " ",
+      "7": " ",
+      "8": " ",
+      "9": " ",
+      "default": " "
+    }
+  },
+  "sway/workspaces#sway": {
+    "current-only": false,
+    "disable-scroll": true,
+    "all-outputs": false,
+    "format": "{name}: {icon}",
+    "numeric-first": true,
+    // "show-special": true,
+    "persistent-workspaces": {
+      "1": ["DP-3"],
+      "2": ["DP-3"],
+      "3": ["DP-3"],
+      "4": ["DP-3"],
+      "5": ["DP-3"],
+      "6": ["HDMI-A-1"],
+      "7": ["HDMI-A-1"],
+      "8": ["HDMI-A-1"],
+      "9": ["HDMI-A-1"],
+      "10": ["HDMI-A-1"]
+    },
+    "format-icons": {
+      "1": " ",
+      "2": " ",
+      "3": " ",
+      "4": " ",
+      "5": " ",
+      "6": " ",
+      "7": " ",
       "8": " ",
       "9": " ",
       "default": " "
@@ -149,12 +183,15 @@
   "mpris": {
     "markup": true,
     "interval": 5,
-    "format": "<span>{title}</span> - <span>{artist}</span>\n<i>{album}</i>",
-    "format-paused": "<span>{title}</span> - <span>{artist}</span>\n<i>{album}</i>",
+    "format": "{player_icon}<span>{title}</span> - <span>{artist}</span>\n<i>{album}</i>",
+    "format-paused": "{player_icon}<span>{title}</span> - <span>{artist}</span>\n<i>{album}</i>",
     "title-len": 30,
     "player-icons": {
-      "default": "⏸",
-      "mpv": "🎵"
+      "default": " ",
+      "mpv": "  ",
+      "plasma-browser-integration": "  ",
+      "firefox": "  ",
+      "spotify": "  "
     },
     "status-icons": {
       "paused": "▶"
@@ -226,7 +263,16 @@
     "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
     "critical-threshold": 80,
     "format-critical": " {temperatureC}°C",
-    "format": " {temperatureC}°C"
+    "format": " {temperatureC}°C",
+    "tooltip-format": "CPU: {temperatureC}°C"
+  },
+  "temperature#amdgpu": {
+    "thermal-zone": 0,
+    "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
+    "critical-threshold": 100,
+    "format-critical": " {temperatureC}°C",
+    "format": " {temperatureC}°C",
+    "tooltip-format": "GPU (edge): {temperatureC}°C"
   },
   "network": {
     "format-wifi": "   {ifname}",
@@ -260,7 +306,7 @@
   "custom/logo": {
     "format": " ",
     "tooltip": false,
-    "on-click": "rofi -show power-menu -modi power-menu:rofi-power-menu"
+    "on-click-release": "rofi -show power-menu -modi power-menu:rofi-power-menu"
   },
   "wireplumber": {
     "format": "{volume}%",
