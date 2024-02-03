@@ -5,14 +5,12 @@
   ],
   "layer": "top",
   "position": "top",
-  "height": 44,
+  "height": 42,
   "modules-left": [
     //"hyprland/workspaces",
     "sway/workspaces#sway",
-    "cava",
-    "image#album-art",
+    "group/visualisation"
     // "custom/media",
-    "mpris"
     // "hyprland/window",
   ],
   "modules-center": [
@@ -20,15 +18,34 @@
     // "mpd",
   ],
   "modules-right": [
-    "tray",
-    "custom/updates",
-    "gamemode",
-    // "keyboard-state",
+    "group/tray-group",
     "network",
     "group/hardware",
     "group/audio",
     "group/rightmost"
   ],
+  "group/tray-group": {
+		"orientation": "horizontal",
+		"modules": [
+      "tray",
+      "custom/updates",
+      "gamemode"
+    // "keyboard-state",
+		]
+  },
+  "group/visualisation": {
+		"orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 500,
+      "children-class": "visualiser",
+      "transition-left-to-right": true
+    },
+		"modules": [
+      "cava",
+      "image#album-art",
+      "mpris"
+		]
+  },
   "group/audio": {
 		"orientation": "horizontal",
     "drawer": {
