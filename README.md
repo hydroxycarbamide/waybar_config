@@ -20,5 +20,10 @@ You know the drills : download and extract to your `${XDG_CONFIG_HOME}/waybar`
 ![](Normal.png)
 
 ![](waybar-extended1.png)
+
 ![](waybar-extended2.png)
+
+![](fullscreen.png)
+
+screenshot by BLACKmeow(x:@miji_black, p:91709880)
 
