@@ -1,7 +1,7 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: Lexend, "M PLUS 1", Noto Sans CJK JP;
+	font-family: Lexend, FiraCode Nerd Font, "M PLUS 1", Noto Sans CJK JP;
 	font-size: 12px;
 	font-weight: 600;
 	min-height: 0;
@@ -27,7 +27,8 @@ tooltip {
 #audio,
 #hardware,
 #rightmost,
-#workspaces {
+#workspaces,
+#tags {
 	background-color: #1e2030;
 	border-radius: 5px 5px 5px 5px;
 	margin: 4px 4px;
@@ -45,6 +46,18 @@ tooltip {
 	background-color: #f4dbd6;
 }
 
+
+#tags button {
+	color: #939ab7;
+	margin-left: 2px;
+	margin-right: 2px;
+	border-radius: 5px;
+}
+
+#tags button.occupied {
+	color: #f4dbd6;
+}
+
 #workspaces button {
 	color: #f4dbd6;
 	margin-left: 2px;
@@ -52,8 +65,7 @@ tooltip {
 	border-radius: 5px;
 }
 
-
-#workspaces button.empty, 
+#workspaces button.empty,
 #workspaces.sway button.persistent {
 	color: #939ab7;
 }
@@ -79,7 +91,8 @@ tooltip {
 }
 
 #workspaces button.active,
-#workspaces button.focused {
+#workspaces button.focused,
+#tags button.focused {
 	color: #0f0f0f;
 	background-color: #f4dbd6;
 }
@@ -166,24 +179,26 @@ widget>label {
 }
 
 #pulseaudio-slider slider {
-  min-height: 0px;
-  min-width: 0px;
-  border-radius: 20px;
-  opacity: 0;
-  background-image: none;
-  border: none;
-  box-shadow: none;
+	min-height: 0px;
+	min-width: 0px;
+	border-radius: 20px;
+	opacity: 0;
+	background-image: none;
+	border: none;
+	box-shadow: none;
 }
+
 #pulseaudio-slider trough {
-  min-height: 4px;
-  min-width: 10px;
-  border-radius: 5px;
-  background-color: #363a4f;
+	min-height: 4px;
+	min-width: 10px;
+	border-radius: 5px;
+	background-color: #363a4f;
 }
+
 #pulseaudio-slider highlight {
-  min-width: 10px;
-  border-radius: 5px;
-  background-color: #91d7e3;
+	min-width: 10px;
+	border-radius: 5px;
+	background-color: #91d7e3;
 }
 
 #cava {

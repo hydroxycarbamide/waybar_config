@@ -5,10 +5,11 @@
   ],
   "layer": "top",
   "position": "top",
-  "height": 42,
+  "height": 43,
   "modules-left": [
     //"hyprland/workspaces",
     "sway/workspaces#sway",
+    //"river/tags",
     "group/visualisation"
     // "custom/media",
     // "hyprland/window",
@@ -36,7 +37,7 @@
   "group/mpdris": {
 		"orientation": "horizontal",
 		"modules": [
-      "image#album-art",
+      // "image#album-art",
       "mpris"
 		]
   },
@@ -57,7 +58,7 @@
     "drawer": {
       "transition-duration": 500,
       "children-class": "not-power",
-      "transition-left-to-right": true
+      "transition-left-to-right": false
     },
 		"modules": [
       "pulseaudio",
@@ -90,10 +91,8 @@
     "active-only": false,
     "disable-scroll": true,
     "all-outputs": false,
-    "on-click": "activate",
     "format": "{name}",
     "sort-by-number": true,
-    // "show-special": true,
     "format-icons": {
       "active": "",
       "default": ""
@@ -105,7 +104,18 @@
     "all-outputs": false,
     "format": "{name}: {icon}",
     "numeric-first": true,
-    // "show-special": true,
+    "format-icons": {
+      "1": " ",
+      "2": " ",
+      "3": " ",
+      "4": " ",
+      "5": " ",
+      "6": " ",
+      "7": " ",
+      "8": " ",
+      "9": " ",
+      "default": " "
+    },
     "persistent-workspaces": {
       "1": ["DP-3"],
       "2": ["DP-3"],
@@ -117,19 +127,17 @@
       "8": ["HDMI-A-1"],
       "9": ["HDMI-A-1"],
       "10": ["HDMI-A-1"]
-    },
-    "format-icons": {
-      "1": " ",
-      "2": " ",
-      "3": " ",
-      "4": " ",
-      "5": " ",
-      "6": " ",
-      "7": " ",
-      "8": " ",
-      "9": " ",
-      "default": " "
     }
+  },
+  "river/tags": {
+      "num-tags": 5,
+      "set-tags": [
+        2147483649,
+        2147483650,
+        2147483652,
+        2147483656,
+        2147483664
+      ]
   },
   "wlr/taskbar": {
     "all-outputs": false,
@@ -191,6 +199,7 @@
     "format": "{player_icon} {dynamic}",
     "format-paused": "{status_icon} <i>{dynamic}</i>",
     "title-len": 30,
+    "dynamic-len": 60,
     "player-icons": {
       "default": " ",
       "mpv": "  ",
@@ -376,7 +385,7 @@
       "█"
     ],
     "actions": {
-      "on-click-right": "mode"
+      // "on-click-right": "mode"
     }
   },
   "keyboard-state": {
