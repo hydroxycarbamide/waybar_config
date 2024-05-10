@@ -20,15 +20,17 @@ tooltip {
 	border-color: rgb(24, 25, 38);
 }
 
-#visualisation,
 #taskbar,
-#tray-group,
 #network,
+#workspaces,
+#tags,
+#rightmost,
 #audio,
 #hardware,
-#rightmost,
-#workspaces,
-#tags {
+#visualisation,
+#tray-group,
+#layout,
+#mpdris {
 	background-color: #1e2030;
 	border-radius: 5px 5px 5px 5px;
 	margin: 4px 4px;
@@ -36,8 +38,6 @@ tooltip {
 }
 
 #mpdris {
-	background-color: #1e2030;
-	border-radius: 5px 5px 5px 5px;
 	color: #f4dbd6;
 }
 
@@ -46,6 +46,15 @@ tooltip {
 	background-color: #f4dbd6;
 }
 
+#layout {
+	color: #f4dbd6;
+}
+
+
+#layout.focused {
+	color: #1e2030;
+	background-color: #f4dbd6;
+}
 
 #tags button {
 	color: #939ab7;
