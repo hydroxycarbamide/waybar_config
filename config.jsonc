@@ -19,9 +19,9 @@
   ],
   "modules-right": [
     "group/tray-group",
-    "network",
     "group/hardware",
     "group/audio",
+    "network",
     "group/rightmost"
   ],
   "group/tray-group": {
@@ -236,8 +236,8 @@
       "<span color='#b7bdf8'>▃</span>", // white
       "<span color='#b7bdf8'>▄</span>", // white
       "<span color='#eed49f'>▅</span>", // yellow
-      "<span color='#eed49f'>▆</span>", // yellow
-      "<span color='#f5a97f'>▇</span>", // orange
+      "<span color='#f5a97f'>▆</span>", // yellow
+      "<span color='#ee99a0'>▇</span>", // orange
       "<span color='#ed8796'>█</span>" // red
     ]
   },
@@ -305,8 +305,8 @@
       "<span color='#b7bdf8'> ▃</span>", // white
       "<span color='#b7bdf8'> ▄</span>", // white
       "<span color='#eed49f'> ▅</span>", // yellow
-      "<span color='#eed49f'> ▆</span>", // yellow
-      "<span color='#f5a97f'> ▇</span>", // orange
+      "<span color='#f5a97f'> ▆</span>", // yellow
+      "<span color='#ee99a0'> ▇</span>", // orange
       "<span color='#ed8796'> █</span>" // red
     ]
   },
@@ -323,8 +323,8 @@
       "<span color='#b7bdf8'> ▃</span>", // white
       "<span color='#b7bdf8'> ▄</span>", // white
       "<span color='#eed49f'> ▅</span>", // yellow
-      "<span color='#eed49f'> ▆</span>", // yellow
-      "<span color='#f5a97f'> ▇</span>", // orange
+      "<span color='#f5a97f'> ▆</span>", // yellow
+      "<span color='#ee99a0'> ▇</span>", // orange
       "<span color='#ed8796'> █</span>" // red
     ]
   },

@@ -132,7 +132,10 @@ widget>label {
 
 #taskbar button {
 	margin: 0px 2px;
-	padding: 2px 9px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 8px;
 	border-radius: 4px;
 	background-color: #363a4f;
 	transition-duration: 150ms;
