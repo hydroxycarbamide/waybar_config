@@ -4,9 +4,9 @@
   "position": "top",
   "height": 32,
   "modules-left": [
-    //"hyprland/workspaces"
+    "hyprland/workspaces",
     //"sway/workspaces#sway"
-    "river/tags",
+    //"river/tags",
     //"river/layout",
 
     "group/visualisation"
@@ -377,7 +377,7 @@
   "pulseaudio": {
     "format": "{icon}",
     "format-bluetooth": "{icon} ",
-    "format-muted": "󰝟",
+    "format-muted": "   ",
     "tooltip-format": "{icon}  {volume}% {format_source} {desc}",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-middle": "helvum",

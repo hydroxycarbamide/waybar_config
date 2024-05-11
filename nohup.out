@@ -1,0 +1,29 @@
+[2024-05-11 22:49:26.897] [info] Using configuration file /home/eric/.config/waybar/config.jsonc
+[2024-05-11 22:49:26.899] [info] Discovered appearance 'dark'
+[2024-05-11 22:49:26.899] [info] Using CSS file /home/eric/.config/waybar/style.css
+[2024-05-11 22:49:26.905] [info] Hyprland IPC starting
+[2024-05-11 22:49:26.906] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-05-11 22:49:27.724] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-05-11 22:49:28.131] [warning] Waybar has been built without rfkill support.
+[2024-05-11 22:49:28.191] [warning] Waybar has been built without rfkill support.
+
+** (waybar:19350): WARNING **: 22:49:28.289: Status Notifier Item with bus name ':1.292' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2024-05-11 22:49:28.582] [info] Bar configured (width: 1920, height: 32) for output: HDMI-A-1
+[2024-05-11 22:49:28.582] [info] Bar configured (width: 1920, height: 32) for output: DP-1
+[2024-05-11 22:52:59.097] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-05-11 22:52:59.101] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-05-11 22:52:59.101] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-05-11 22:52:59.101] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-05-11 22:52:59.724] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-05-11 22:52:59.724] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-05-11 22:52:59.724] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-05-11 22:52:59.725] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-05-11 22:54:00.819] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-05-11 22:54:00.820] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-05-11 22:54:00.820] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-05-11 22:54:00.821] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-05-11 22:54:07.842] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-05-11 22:54:07.842] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-05-11 22:54:07.842] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-05-11 22:54:07.843] [info] Loading persistent workspaces from Hyprland workspace rules
+Gdk-Message: 22:54:31.307: Lost connection to Wayland compositor.
