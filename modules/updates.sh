@@ -4,7 +4,7 @@ pkg_updates() {
   aurupdates=$(paru -Qua | wc -l)
   updates=$((updates + aurupdates))
   if [ $updates -gt 0 ]; then
-    echo -n " $updates"
+    echo -n "  $updates"
   fi
 }
 pkg_updates

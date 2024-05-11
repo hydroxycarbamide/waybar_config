@@ -2,7 +2,7 @@
 	border: none;
 	border-radius: 0;
 	font-family: Lexend, FiraCode Nerd Font, "M PLUS 1", Noto Sans CJK JP;
-	font-size: 12px;
+	font-size: 10px;
 	font-weight: 600;
 	min-height: 0;
 }
@@ -20,28 +20,37 @@ tooltip {
 	border-color: rgb(24, 25, 38);
 }
 
-#taskbar,
-#network,
-#workspaces,
-#tags,
-#rightmost,
-#audio,
-#hardware,
-#visualisation,
-#tray-group,
-#layout,
+.modules-left,
+.modules-center,
+.modules-right,
 #mpdris {
 	background-color: #1e2030;
-	border-radius: 5px 5px 5px 5px;
-	margin: 4px 4px;
-	padding: 3px 10px;
+  margin: 2px;
+  padding: 2px;
+}
+
+.modules-left,
+.modules-center,
+.modules-right,
+#clock,
+#visualisation,
+#mpdris,
+#custom-updates
+{
+  border-radius: 5px 5px 5px 5px;
+}
+
+#tray,
+widget>label {
+	padding: 0px 8px;
 }
 
 #mpdris {
 	color: #f4dbd6;
 }
 
-#visualisation {
+#visualisation
+{
 	color: #1e2030;
 	background-color: #f4dbd6;
 }
@@ -58,7 +67,6 @@ tooltip {
 
 #tags button {
 	color: #939ab7;
-	margin-left: 2px;
 	margin-right: 2px;
 	border-radius: 5px;
 }
@@ -69,7 +77,6 @@ tooltip {
 
 #workspaces button {
 	color: #f4dbd6;
-	margin-left: 2px;
 	margin-right: 2px;
 	border-radius: 5px;
 }
@@ -106,13 +113,9 @@ tooltip {
 	background-color: #f4dbd6;
 }
 
-widget>box,
-widget>label {
-	padding: 3px 10px;
-}
 
 #mpris {
-	font-size: 8px;
+	font-size: 7px;
 }
 
 #custom-notification {
@@ -121,7 +124,7 @@ widget>label {
 
 #taskbar button {
 	margin: 0px 2px;
-	padding: 5px 9px;
+	padding: 2px 9px;
 	border-radius: 4px;
 	background-color: #363a4f;
 	transition-duration: 150ms;
@@ -143,16 +146,15 @@ widget>label {
 	border-bottom: 3px solid #b7bdf8;
 }
 
-#custom-date {
-	color: #8aadf4;
+#clock {
+	color: #1e2030;
+	background-color: #8aadf4;
 }
 
 #custom-updates {
-	color: #9ccfd8;
-}
-
-#rightmost {
-	color: #8aadf4;
+	margin-right: 2px;
+	color: #1e2030;
+	background-color: #9ccfd8;
 }
 
 #custom-downloads {

@@ -1,16 +1,13 @@
 {
-  "output": [
-    "DP-1",
-    "HDMI-A-1"
-  ],
+  "output": ["DP-1", "HDMI-A-1"],
   "layer": "top",
   "position": "top",
-  "height": 45,
+  "height": 32,
   "modules-left": [
     //"hyprland/workspaces"
     //"sway/workspaces#sway"
     "river/tags",
-    "river/layout",
+    //"river/layout",
 
     "group/visualisation"
     // "custom/media",
@@ -28,67 +25,59 @@
     "group/rightmost"
   ],
   "group/tray-group": {
-		"orientation": "horizontal",
-		"modules": [
+    "orientation": "horizontal",
+    "modules": [
       "tray",
-      "custom/updates",
       "gamemode"
-    // "keyboard-state",
-		]
+      // "keyboard-state",
+    ]
   },
   "group/mpdris": {
-		"orientation": "horizontal",
-		"modules": [
+    "orientation": "horizontal",
+    "modules": [
       // "image#album-art",
       "mpris"
-		]
+    ]
   },
   "group/visualisation": {
-		"orientation": "horizontal",
+    "orientation": "horizontal",
     "drawer": {
       "transition-duration": 500,
       "children-class": "visualiser",
       "transition-left-to-right": true
     },
-		"modules": [
-      "cava",
-      "group/mpdris"
-		]
+    "modules": ["cava", "group/mpdris"]
   },
   "group/audio": {
-		"orientation": "horizontal",
+    "orientation": "horizontal",
     "drawer": {
       "transition-duration": 500,
       "children-class": "not-power",
       "transition-left-to-right": false
     },
-		"modules": [
-      "pulseaudio",
-      "pulseaudio/slider"
-		]
-	},
+    "modules": [
+      "pulseaudio"
+      // "pulseaudio/slider"
+    ]
+  },
   "group/hardware": {
-		"orientation": "horizontal",
+    "orientation": "horizontal",
     "drawer": {
-        "transition-duration": 500,
-        "children-class": "not-power",
-        "transition-left-to-right": false
+      "transition-duration": 500,
+      "children-class": "not-power",
+      "transition-left-to-right": false
     },
-		"modules": [
-      "temperature",
-			"memory",
-			"cpu",
-      "temperature#amdgpu"
-		]
-	},
+    "modules": ["temperature", "memory", "cpu", "temperature#amdgpu"]
+  },
   "group/rightmost": {
-		"orientation": "horizontal",
-		"modules": [
+    "orientation": "horizontal",
+    "modules": [
       "custom/notification",
-      "clock",
-      "custom/logo"
-		]
-	},
+      "custom/updates",
+      "clock"
+      // "custom/logo"
+    ]
+  },
   "hyprland/workspaces": {
     "active-only": false,
     "disable-scroll": true,
@@ -132,46 +121,37 @@
     // }
   },
   "river/tags": {
-      "num-tags": 8,
-      "set-tags": [
-        // 000001
-        2147483649,
+    "num-tags": 8,
+    "set-tags": [
+      // 000001
+      2147483649,
 
-        // 000010
-        2147483650,
+      // 000010
+      2147483650,
 
-        // 000100
-        2147483652,
+      // 000100
+      2147483652,
 
-        // 001000
-        2147483656, 
+      // 001000
+      2147483656,
 
-        // 010000
-        2147483664,
+      // 010000
+      2147483664,
 
-        // 100000
-        2147483692
-      ],
-      "tag-labels": [
-        " ",
-        " ",
-        " ",
-        " ",
-        " ",
-        " ",
-        " ",
-        " "
-      ]
+      // 100000
+      2147483692
+    ],
+    "tag-labels": [" ", " ", " ", " ", " ", " ", " ", " "]
   },
   "river/layout": {
-      "format": "{}",
-      "min-length": 4,
-      "align": "right"
+    "format": "{}",
+    "min-length": 4,
+    "align": "right"
   },
   "wlr/taskbar": {
     "all-outputs": false,
     "format": "{icon}",
-    "icon-size": 15,
+    "icon-size": 14,
     "icon-theme": "Papirus-Dark",
     "active-first": false,
     "tooltip-format": "{title} - {app_id}",
@@ -232,7 +212,7 @@
     "player-icons": {
       "default": " ",
       "mpv": "  ",
-      "plasma-browser-integration": "  ",
+      "plasma-browser-integration": "  ",
       "firefox": "  ",
       "spotify": "  "
     },
@@ -246,21 +226,32 @@
     "format": "  {used:0.1f}G/{total:0.1f}G"
   },
   "cpu": {
-      "interval": 10,
-      "format": "  {}%",
-      "max-length": 10
+    "interval": 1,
+    "max-length": 15,
+    // "format": "  {}%",
+    "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}{icon9}{icon10}{icon11}{icon12}{icon13}{icon14}{icon15}",
+    "format-icons": [
+      "<span color='#a6da95'>▁</span>", // green
+      "<span color='#8aadf4'>▂</span>", // blue
+      "<span color='#b7bdf8'>▃</span>", // white
+      "<span color='#b7bdf8'>▄</span>", // white
+      "<span color='#eed49f'>▅</span>", // yellow
+      "<span color='#eed49f'>▆</span>", // yellow
+      "<span color='#f5a97f'>▇</span>", // orange
+      "<span color='#ed8796'>█</span>" // red
+    ]
   },
   "custom/notification": {
     "tooltip": false,
-    "format": "{} {icon} ",
+    "format": "{icon} ",
     "format-icons": {
-      "notification": "<span foreground='red'><sup></sup></span>",
+      "notification": "󰂚",
       "none": "",
-      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-notification": "",
       "dnd-none": "",
-      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-notification": "󰂚",
       "inhibited-none": "",
-      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-notification": "",
       "dnd-inhibited-none": ""
     },
     "return-type": "json",
@@ -305,26 +296,45 @@
     "thermal-zone": 0,
     "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
     "critical-threshold": 80,
-    "format-critical": " {temperatureC}°C",
-    "format": " {temperatureC}°C",
-    "tooltip-format": "CPU: {temperatureC}°C"
+    "format-critical": "{icon}",
+    "format": "{icon}",
+    "tooltip-format": "CPU: {temperatureC}°C",
+    "format-icons": [
+      "<span color='#a6da95'> ▁</span>", // green
+      "<span color='#8aadf4'> ▂</span>", // blue
+      "<span color='#b7bdf8'> ▃</span>", // white
+      "<span color='#b7bdf8'> ▄</span>", // white
+      "<span color='#eed49f'> ▅</span>", // yellow
+      "<span color='#eed49f'> ▆</span>", // yellow
+      "<span color='#f5a97f'> ▇</span>", // orange
+      "<span color='#ed8796'> █</span>" // red
+    ]
   },
   "temperature#amdgpu": {
     "thermal-zone": 0,
     "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
     "critical-threshold": 100,
-    "format-critical": " {temperatureC}°C",
-    "format": " {temperatureC}°C",
-    "tooltip-format": "GPU (edge): {temperatureC}°C"
+    "format-critical": "{icon}",
+    "format": "{icon}",
+    "tooltip-format": "GPU (edge): {temperatureC}°C",
+    "format-icons": [
+      "<span color='#a6da95'> ▁</span>", // green
+      "<span color='#8aadf4'> ▂</span>", // blue
+      "<span color='#b7bdf8'> ▃</span>", // white
+      "<span color='#b7bdf8'> ▄</span>", // white
+      "<span color='#eed49f'> ▅</span>", // yellow
+      "<span color='#eed49f'> ▆</span>", // yellow
+      "<span color='#f5a97f'> ▇</span>", // orange
+      "<span color='#ed8796'> █</span>" // red
+    ]
   },
   "network": {
-    "format-wifi": "   {ifname}",
-    // "format-ethernet": "󰱓   {bandwidthDownBytes}  {bandwidthTotalBytes}",
-    "format-ethernet": "󰱓  {ifname}",
+    "format-wifi": "",
+    "format-ethernet": "󰈀",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "󰤮   Disconnected",
-    "tooltip-format-ethernet": "{ipaddr}/{cidr} | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
-    "tooltip-format-wifi": "{ipaddr}/{cidr} | {essid} | Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+    "tooltip-format-ethernet": "{ifname} | {ipaddr}/{cidr} | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+    "tooltip-format-wifi": "{ifname} | {ipaddr}/{cidr} | {essid} | Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
     "on-click": "networkmanager_dmenu"
   },
   "image#album-art": {
@@ -359,26 +369,33 @@
     "scroll-step": 0.2
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
-    "format-bluetooth": "{icon}   {volume}%",
-    "format-muted": "󰝟 Muted",
+    "format": "{icon}",
+    "format-bluetooth": "{icon} ",
+    "format-muted": "󰝟",
+    "tooltip-format": "{icon}  {volume}% {format_source} {desc}",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-middle": "helvum",
     "on-click-right": "pavucontrol",
     "scroll-step": 5,
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": [
-        "",
-        "",
-        ""
-      ]
-    },
+    // "format-icons": {
+    //   "headphone": "",
+    //   "hands-free": "",
+    //   "headset": "",
+    //   "phone": "",
+    //   "portable": "",
+    //   "car": "",
+    //   "default": ["", "", ""]
+    // },
+    "format-icons": [
+      "<span color='#8aadf4'>  ▁</span>", // green
+      "<span color='#7dc4e4'>  ▂</span>", // blue
+      "<span color='#91d7e3'>  ▃</span>", // white
+      "<span color='#8bd5ca'>  ▄</span>", // white
+      "<span color='#a6da95'>  ▅</span>", // yellow
+      "<span color='#eed49f'>  ▆</span>", // yellow
+      "<span color='#f5a97f'>  ▇</span>", // orange
+      "<span color='#ed8796'>  █</span>" // red
+    ],
     "ignored-sinks": ["Easy Effects Sink"]
   },
   "pulseaudio/slider": {
@@ -394,7 +411,7 @@
     "bars": 12,
     "lower_cutoff_freq": 50,
     "higher_cutoff_freq": 10000,
-    "method": "pipewire",
+    "method": "pulse",
     "source": "auto",
     "stereo": true,
     "reverse": false,
@@ -403,16 +420,7 @@
     "waves": false,
     "noise_reduction": 0.77,
     "input_delay": 2,
-    "format-icons": [
-      "▁",
-      "▂",
-      "▃",
-      "▄",
-      "▅",
-      "▆",
-      "▇",
-      "█"
-    ],
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
     "actions": {
       // "on-click-right": "mode"
     }
@@ -421,16 +429,38 @@
     "numlock": false,
     "capslock": true,
     "format": {
-        "numlock": "N {icon}",
-        "capslock": "{icon}"                                                                                                                                                       
+      "numlock": "N {icon}",
+      "capslock": "{icon}"
     },
     "format-icons": {
-        "locked": "",
-        "unlocked": ""
+      "locked": "",
+      "unlocked": ""
     }
   },
   "hyprland/window": {
-      "format": "{title}",
-      "separate-outputs": false
+    "format": "{title}",
+    "separate-outputs": false
+  },
+  "privacy": {
+    "icon-spacing": 4,
+    "icon-size": 18,
+    "transition-duration": 250,
+    "modules": [
+      {
+        "type": "screenshare",
+        "tooltip": true,
+        "tooltip-icon-size": 24
+      },
+      {
+        "type": "audio-out",
+        "tooltip": true,
+        "tooltip-icon-size": 24
+      },
+      {
+        "type": "audio-in",
+        "tooltip": true,
+        "tooltip-icon-size": 24
+      }
+    ]
   }
 }
