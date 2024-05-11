@@ -35,7 +35,8 @@ tooltip {
 #clock,
 #visualisation,
 #mpdris,
-#custom-updates
+#custom-updates,
+#custom-notification.notification
 {
   border-radius: 5px 5px 5px 5px;
 }
@@ -120,6 +121,13 @@ widget>label {
 
 #custom-notification {
 	color: #eb6f92;
+	padding-left: 12px;
+	margin-right: 2px;
+}
+
+#custom-notification.notification {
+	color: #0f0f0f;
+	background-color: #eb6f92;
 }
 
 #taskbar button {
